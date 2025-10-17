@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kulbu/Home</title>
+  <link rel="icon" href="image/kulbu.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <!-- New Background System -->
+  <div class="bg-container">
+    <div class="bg-gradient"></div>
+    <div class="bg-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+  </div>
+
+  <!-- 3D Smoke Effect Animation -->
+  <div class="smoke-container">
+    <div class="smoke-particle smoke-layer-1"></div>
+    <div class="smoke-particle smoke-layer-2"></div>
+    <div class="smoke-particle smoke-layer-3"></div>
+    <div class="smoke-particle smoke-layer-4"></div>
+    <div class="smoke-particle smoke-layer-5"></div>
+    <div class="smoke-particle smoke-layer-1"></div>
+    <div class="smoke-particle smoke-layer-2"></div>
+    <div class="smoke-particle smoke-layer-3"></div>
+    <div class="smoke-particle smoke-layer-4"></div>
+    <div class="smoke-particle smoke-layer-5"></div>
+    <div class="smoke-particle smoke-layer-1"></div>
+    <div class="smoke-particle smoke-layer-2"></div>
+    <div class="smoke-particle smoke-layer-3"></div>
+    <div class="smoke-particle smoke-layer-4"></div>
+    <div class="smoke-particle smoke-layer-5"></div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="image/kulbu.png" alt="KulbuPlayz Logo">
+        <span>KulbuPlayz</span>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#socials">Socials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-btn"><span></span><span></span><span></span></button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="mobile-nav-logo">
+        <img src="image/kulbu.png" alt="KulbuPlayz Logo">
+        <span>KulbuPlayz</span>
+      </div>
+      <button class="mobile-nav-close" id="mobile-nav-close">×</button>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#socials">Socials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main>
+    <!-- Hero -->
+    <section id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Hey Everyone 👋</h1>
+          <p>I'm <strong>Kulbhushan</strong>, also known as <strong>KulbuPlayz</strong></p>
+          <div class="hero-badge">Content Creator & Streamer</div>
+        </div>
+        <div class="hero-image">
+          <img src="image/kulbu.png" alt="KulbuPlayz">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="card">
+        <h3>About Me</h3>
+        <div class="card-grid">
+          <div class="feature-card">
+            <h4>🎮 Gaming</h4>
+            <p>Passionate about creating engaging gaming content and sharing epic moments with my community.</p>
+          </div>
+          <div class="feature-card">
+            <h4>📺 Streaming</h4>
+            <p>Live streaming sessions where we connect, play together, and build an amazing community.</p>
+          </div>
+          <div class="feature-card">
+            <h4>💬 Community</h4>
+            <p>Building lasting relationships with viewers and creating a welcoming space for all gamers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Socials -->
+    <section id="socials">
+      <div class="card">
+        <h3>Follow Me</h3>
+        <div class="socials">
+          <a href="https://www.youtube.com/@KulbuPlayzOP" target="_blank" class="social-card">
+            <img src="image/youtube-icon.png" alt="YouTube">
+            <span>YouTube</span>
+          </a>
+          <a href="https://www.instagram.com/kulbuplayz_" target="_blank" class="social-card">
+            <img src="image/instagram-icon.png" alt="Instagram">
+            <span>Instagram</span>
+          </a>
+          <a href="https://discord.gg/FBAFXrMBWR" target="_blank" class="social-card">
+            <img src="image/discord-icon.png" alt="Discord">
+            <span>Discord</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="card">
+        <h4>Contact Info</h4>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+          <span>
+            <a style="color: white;" href="mailto:tripathikulbhushan8@gmail.com">
+              tripathikulbhushan8@gmail.com
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXED FORM SECTION 👇 -->
+    <section id="Form">
+      <div class="card">
+        <h4>Send a Message</h4>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Gmail" required>
+          <input type="text" name="subject" placeholder="Title & Subject" required>
+          <textarea name="message" rows="4" placeholder="Description" required></textarea>
+          <button type="submit">Submit</button>
+          <p id="form-status" style="margin-top:8px;color:var(--text-muted);"></p>
+        </form>
+      </div>
+    </section>
+    <!-- 👆 Removed extra closing </div> tags -->
+  </main>
+
+  <footer>© <span id="year"></span> Kulbu. All rights reserved.</footer>
+
+  <!-- Floating Action Button -->
+  <button class="floating-btn" onclick="scrollToTop()" title="Back to Top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
